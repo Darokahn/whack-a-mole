@@ -9,8 +9,13 @@
 </head>
 <body>
     <div id="app">
-
-        
+        <p>Time remaining: {{timer}}</p>
+        <p>Moles: {{moleCount}}</p>
+        <div id="grid" v-bind:style="gridStyle">
+            <div class="cell" v-for="cell in (rowCount * colCount)">
+                <div class="mole" v-show="molesContains(indexToXY(cell))" @click="removeMole(indexToXY(cell))"></div>
+            </div>
+        </div>
     </div>
 
 </body>

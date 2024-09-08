@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+}
+
+#app {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    display: grid;
+    grid-gap: 10px;
+    width: 50vh;
+    height: 50vh;
+}
+
+.cell {
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mole {
+    background-color: red;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
